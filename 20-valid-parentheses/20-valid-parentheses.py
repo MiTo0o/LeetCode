@@ -15,5 +15,6 @@ class Solution:
                 stack.pop()
             else:
                 stack.append(i)
+        
         return len(stack) == 0
             
