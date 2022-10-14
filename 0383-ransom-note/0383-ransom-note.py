@@ -6,6 +6,7 @@ class Solution:
             xd[i] += 1
         for i in ransomNote:
             xd[i] -= 1
-            
+            if xd[i] < 0:
+                return False
 
-        return all([i >= 0 for i in xd.values()])
+        return True
