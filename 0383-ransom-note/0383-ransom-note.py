@@ -7,7 +7,5 @@ class Solution:
         for i in ransomNote:
             xd[i] = xd.get(i, 0) - 1
             
-        for i in xd.values():
-            if i < 0:
-                return False
-        return True
+
+        return all([i >= 0 for i in xd.values()])
