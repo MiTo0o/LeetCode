@@ -12,7 +12,7 @@ class MyQueue:
         return self.s2.pop()
 
     def peek(self) -> int:
-        if len(self.s2) == 0:
+        if not self.s2:
             while self.s1:
                 self.s2.append(self.s1.pop())
         return self.s2[-1]
