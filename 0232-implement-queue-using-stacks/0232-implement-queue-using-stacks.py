@@ -18,7 +18,7 @@ class MyQueue:
         return self.s2[-1]
 
     def empty(self) -> bool:
-        return len(self.s2) + len(self.s1) == 0
+        return not self.s2 and not self.s1
 
 # Your MyQueue object will be instantiated and called as such:
 # obj = MyQueue()
