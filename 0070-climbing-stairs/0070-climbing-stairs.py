@@ -3,6 +3,6 @@ class Solution:
         x, d = 0, 1
         for i in range(n):
             temp = x + d
-            x, d= d, temp 
+            x, d = d, temp 
 
         return d
