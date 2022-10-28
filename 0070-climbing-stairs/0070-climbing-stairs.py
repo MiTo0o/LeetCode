@@ -3,5 +3,4 @@ class Solution:
         x, d = 0, 1
         for i in range(n):
             x, d = d, x + d
-
         return d
