@@ -13,7 +13,7 @@ class Solution:
                 s = l1.val + l2.val + carry
                 carry, s = divmod(s, 10)
 
-                sum.next = ListNode(s % 10)
+                sum.next = ListNode(s)
                 sum = sum.next
                 l1 = l1.next
                 l2 = l2.next
